@@ -24,7 +24,7 @@ This document contains guidelines for contributing to SmartProcure code, across 
 - Use lodash/fp
 - Use futil-js
 - Avoid `this` and try to keep methods as pure as possible
-- Use modern js with spread and destructuring, use lodash method shorthands, etc.
+- Use modern js with spread and destructuring, use async/await, use lodash method shorthands, etc.
 - When possible, try to make the structure of the result of the function as self evident as possible (e.g. prefer push/concat over unshift, etc.)
 - Try to write methods as a single flow
   - All functions can be created as a single flow--in many functional languages it is the only option
