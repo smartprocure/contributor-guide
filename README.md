@@ -35,7 +35,7 @@ This document contains guidelines for contributing to SmartProcure code, across 
 - Broad browser support
   - Many of our clients are government agencies and small businesses who use older browsers.  All code should support IE10 and above, and all version of Chrome, Firefox and Safari
 - Including external libraries at run-time
-  - No external library loaded at run-time should be able to prevent our application from running (i.e include a try-catch).  Although the particular feature may fail, the rest of the application should run.  continue 
+  - No external library loaded at run-time should be able to prevent our application from running (i.e include a try-catch).  Although the particular feature may fail, the rest of the application should continue running. 
 
 ## Some Clarifications ##
 
