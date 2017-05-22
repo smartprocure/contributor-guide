@@ -44,3 +44,12 @@ Async/Await is a _direct_ syntactial sugar to promises and doesn’t force anyth
 
 #### Futil-js Conversions ####
 We have standardized conventions for lodash conversion methods in futil. We spent a fair amount of time debating what the names should be, and every developer who was here at the time had the opportunity to comment on it. Things ending in `In` are flipped, things ending in `On` are mutable, and we don't currently have one for uncap because so far we haven't actually needed it (e.g. things like `_.toPairs` tend to be more explict). If these names are unclear and someone has a better suggestion, let's open an issue on the github repo and discuss it - but no developer at SmartProcure should be unfamiliar with the methods in futil. We even maintain the most meticulous, detailed changelog of anything we've ever produced and enforce 100% test coverage.
+
+
+## Development Process ##
+
+### Tickets ###
+All development should happen on github issues which should be linked to whatever ticketing system is relevant to the project (typically, freshdesk). When creating a PR, be sure to include `Fixes #123`, where `123` is the id of the issue it closes in the _body_ of the PR as per [this article](https://github.com/blog/1506-closing-issues-via-pull-requests).
+
+### Statuses ###
+Also, be sure to set the proper status labels on PRs - `Needs Review` is used when a PR is ready for feedback, and `In Progress` are things you're working in. `Ready` is for things that are ready for you to work but aren't in progress. PRs will be set to `Ready` after review if there are changes requested. Waffle.io provides a nice interface to this workflow because you can drag tickets between columns to change statuses.
