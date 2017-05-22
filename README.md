@@ -49,7 +49,7 @@ We have standardized conventions for lodash conversion methods in futil. We spen
 ## Development Process ##
 
 ### Tickets ###
-All development should happen on github issues which should be linked to whatever ticketing system is relevant to the project (typically, freshdesk). When creating a PR, be sure to include `Fixes #123`, where `123` is the id of the issue it closes in the _body_ of the PR as per [this article](https://github.com/blog/1506-closing-issues-via-pull-requests).
+All development should happen on github issues which should be linked to whatever ticketing system is relevant to the project (typically, freshdesk). When creating a PR, be sure to include `Fixes #123`, where `123` is the id of the issue it closes in the _body_ of the PR as per [this article](https://github.com/blog/1506-closing-issues-via-pull-requests). Make sure github issues are properly linked to the relevant ticketing system - and if they can't be, include a link to the github issue and ticket as comments in each system. For Freshdesk, be sure to use the actual github integration so our automation rules work properly.
 
 ### Statuses ###
 Also, be sure to set the proper status labels on PRs - `Needs Review` is used when a PR is ready for feedback, and `In Progress` are things you're working in. `Ready` is for things that are ready for you to work but aren't in progress. PRs will be set to `Ready` after review if there are changes requested. Waffle.io provides a nice interface to this workflow because you can drag tickets between columns to change statuses.
