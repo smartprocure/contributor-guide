@@ -19,6 +19,13 @@ This document contains guidelines for contributing to SmartProcure code, across 
         divide(grades.length)
       )(grades)
     ```
+- Destructure parameters in the function definition when possible
+  - e.g. prefer `({firstName, lastName}) => handlePerson(firstName, lastName)` over 
+    ```js
+      person =>
+        let {firstName, lastName} = person
+        return handlePerson(firstName, lastName)
+    ```
 
 ## General Things to follow ##
 - Use lodash/fp
