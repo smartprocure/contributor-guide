@@ -29,9 +29,13 @@ This document contains guidelines for contributing to SmartProcure code, across 
 - Try to write methods as a single flow
   - All functions can be created as a single flow--in many functional languages it is the only option
   - If you're having a lot of trouble making something a single flow, it's probably a sign that it needs to be broken into smaller methods
-- Keep state minimal and derive as much as possible.
+- Keep state minimal and derive as much as possible
   - With mobx/knockout, use computeds over manually updated observables/subscriptions
   - With redux, use selectors
+- Broad browser support
+  - Many of our clients are government agencies and small businesses who use older browsers.  All code should support IE10 and above, and all versions of Chrome, Firefox and Safari
+- Including external libraries at run-time
+  - No external library loaded at run-time should be able to prevent our application from running (i.e include a try-catch).  Although the particular feature may fail, the rest of the application should continue running. 
 
 ## Some Clarifications ##
 
