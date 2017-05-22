@@ -26,6 +26,7 @@ This document contains guidelines for contributing to SmartProcure code, across 
         let {firstName, lastName} = person
         return handlePerson(firstName, lastName)
     ```
+- Aim for arrow functions that are simple enough to avoid a return
 
 ## General Things to follow ##
 - Use lodash/fp
