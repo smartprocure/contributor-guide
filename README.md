@@ -61,3 +61,6 @@ All development should happen on github issues which should be linked to whateve
 
 ### Statuses ###
 Also, be sure to set the proper status labels on PRs - `Needs Review` is used when a PR is ready for feedback, and `In Progress` are things you're working in. `Ready` is for things that are ready for you to work but aren't in progress. PRs will be set to `Ready` after review if there are changes requested. Waffle.io provides a nice interface to this workflow because you can drag tickets between columns to change statuses.
+
+### Pull Requests ###
+When you open a PR, make sure to **review it yourself before asking for feedback**. Chances are you'll find something that can and should be better - and chances are you're just going to waste someone's time if you don't fix those things first. Make sure the PR looks good to you and that you've made a solid effort to produce something that is clean, concise and easy to understand - really _read_ your diffs, because that's exactly what you're expecting the reviewer to do. And remember that the review process isn't perfect, so just because something is elsewhere in the codebase, it doesn't mean it's the right way to do it. If you see a pattern in the code, don't just blindly copy it. If it looks messy to you - _ask someone_ about it. There's a good chance it can be improved, too.
