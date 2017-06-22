@@ -64,3 +64,6 @@ Also, be sure to set the proper status labels on PRs - `Needs Review` is used wh
 
 ### Pull Requests ###
 When you open a PR, make sure to **review it yourself before asking for feedback**. Chances are you'll find something that can and should be better - and chances are you're just going to waste someone's time if you don't fix those things first. Make sure the PR looks good to you and that you've made a solid effort to produce something that is clean, concise and easy to understand - really _read_ your diffs, because that's exactly what you're expecting the reviewer to do. And remember that the review process isn't perfect, so just because something is elsewhere in the codebase, it doesn't mean it's the right way to do it. If you see a pattern in the code, don't just blindly copy it. If it looks messy to you - _ask someone_ about it. There's a good chance it can be improved, too.
+
+### Flow ###
+GH Issues and PRs should stay assigned to the person working on it throughout the process. Once PRs are ready for review, add the review in the reviewer column and change the status to needs review - but don't reassign the issue or PR to the reviewer.
