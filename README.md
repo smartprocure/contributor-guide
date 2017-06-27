@@ -40,6 +40,7 @@ This document contains guidelines for contributing to SmartProcure code, across 
 - Keep state minimal and derive as much as possible
   - With mobx/knockout, use computeds over manually updated observables/subscriptions
   - With redux, use selectors
+- When modeling state, it's usually a good idea to try to use a similar or exact structure to what is going to and from the server. This eliminates extra mapping code and simplifies everything - but this also goes both ways. Try to use a single structure in both the db and gui that work well where possible.
 - Broad browser support
   - Many of our clients are government agencies and small businesses who use older browsers.  All code should support IE10 and above, and all versions of Chrome, Firefox and Safari
 - Including external libraries at run-time
