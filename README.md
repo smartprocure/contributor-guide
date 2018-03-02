@@ -5,20 +5,9 @@ This document contains guidelines for contributing to SmartProcure code, across 
 ## Mechanical Applicable (e.g. Potentially ESLint-able) ##
 - Always use explict composition over implict
   - (e.g. to calculate the average of a `grade` property, prefer `flow(map('score'), reduce(sum), divide(grades.length))(grades)` over `divide(grades.length, reduce(sum, map('score', grades)))`
-- Create temporary variables for flows if:
+- Create temporary variables for flows iff:
   - They are reused in more than one place, _OR_
   - They require a comment documenting _what_ they do (so use a name instead of comment)
-- Put flows on multiple lines if:
-  - There are 3 or more steps (like the example above) _OR_
-  - There are two steps and they are dense (subjective, but an easy indicator is if line length is approaching 80 characters)
-  - e.g. instead of `flow(map('score'), reduce(sum), divide(grades.length))(grades)`, prefer
-    ```js
-      flow(
-        map('score'),
-        reduce(sum),
-        divide(grades.length)
-      )(grades)
-    ```
 - Destructure parameters in the function definition when possible
   - e.g. prefer `({firstName, lastName}) => handlePerson(firstName, lastName)` over 
     ```js
@@ -58,7 +47,7 @@ We have standardized conventions for lodash conversion methods in futil. We spen
 ## Development Process ##
 
 ### Tickets ###
-All development should happen on github issues which should be linked to whatever ticketing system is relevant to the project (typically, freshdesk). When creating a PR, be sure to include `Fixes #123`, where `123` is the id of the issue it closes in the _body_ of the PR as per [this article](https://github.com/blog/1506-closing-issues-via-pull-requests). Make sure github issues are properly linked to the relevant ticketing system - and if they can't be, include a link to the github issue and ticket as comments in each system. For Freshdesk, be sure to use the actual github integration so our automation rules work properly.
+All development should happen on github issues which should be linked to whatever ticketing system is relevant to the project (typically, github). When creating a PR, be sure to include `Fixes #123`, where `123` is the id of the issue it closes in the _body_ of the PR as per [this article](https://github.com/blog/1506-closing-issues-via-pull-requests). Make sure github issues are properly linked to the relevant ticketing system - and if they can't be, include a link to the github issue and ticket as comments in each system.
 
 ### Statuses ###
 Also, be sure to set the proper status labels on PRs - `Needs Review` is used when a PR is ready for feedback, and `In Progress` are things you're working in. `Ready` is for things that are ready for you to work but aren't in progress. PRs will be set to `Ready` after review if there are changes requested. Waffle.io provides a nice interface to this workflow because you can drag tickets between columns to change statuses.
